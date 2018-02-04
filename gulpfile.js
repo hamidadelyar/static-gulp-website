@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
 
 const PATH_SASS_FILES = 'sass/*.sass';
 const PATH_HTML_FILES = '**/*.html';
@@ -18,6 +19,10 @@ gulp.task('task-name', function () {
 gulp.task('sass', function(){
   return gulp.src(PATH_SASS_FILES)
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
+    .pipe(autoprefixer({
+    	browsers: ['last 2 versions'],
+    	cascade: false
+    }))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({
     	stream: true
