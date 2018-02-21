@@ -58,3 +58,6 @@ gulp.task('browserSync', function(){
 		}
 	})
 })
+
+
+gulp.task('default', ['watch']);
