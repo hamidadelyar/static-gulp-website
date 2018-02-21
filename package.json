@@ -1,18 +1,18 @@
 {
-  "name": "arezzo-static-design",
+  "name": "static-gulp-website",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "directories": {
-    "doc": "doc"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Hamid Adelyar",
   "license": "ISC",
   "dependencies": {
-    "browser-sync": "^2.23.6"
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-sass": "^3.1.0"
   },
   "devDependencies": {
     "gulp-imagemin": "^4.1.0"
